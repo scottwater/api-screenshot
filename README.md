@@ -13,20 +13,20 @@ https://v1.screenshot.11ty.dev/:url/:size/:aspectratio/
 https://v1.screenshot.11ty.dev/:url/:size/:aspectratio/:zoom/
 ```
 
-* `url` must be URI encoded.
-* Valid `size` values:
-  * `small`: 375×___ (default)
-  * `medium`: 650×___
-  * `large`: 1024×___
-    * `aspectratio` of `9:16` is not supported (throws an error)
-  * `opengraph`: always 1200×630, works with `zoom`
-    * `aspectratio` is ignored (no errors thrown)
-* Valid `aspectratio` values:
-  * `1:1` (default)
-  * `9:16`
-* Valid `zoom` values:
-  * `bigger` (1.4 `devicePixelRatio`)
-  * `smaller` (0.71 `devicePixelRatio`)
+- `url` must be URI encoded.
+- Valid `size` values:
+  - `small`: 375×\_\_\_ (default)
+  - `medium`: 650×\_\_\_
+  - `large`: 1024×\_\_\_
+    - `aspectratio` of `9:16` is not supported (throws an error)
+  - `opengraph`: always 1200×630, works with `zoom`
+    - `aspectratio` is ignored (no errors thrown)
+- Valid `aspectratio` values:
+  - `1:1` (default)
+  - `9:16`
+- Valid `zoom` values:
+  - `bigger` (1.4 `devicePixelRatio`)
+  - `smaller` (0.71 `devicePixelRatio`)
 
 ### Advanced: Manual Cache Busting
 
@@ -45,3 +45,7 @@ https://v1.screenshot.11ty.dev/:url/:size/:aspectratio/:zoom/_20210802/
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/11ty/api-screenshot
 "><img src="https://www.netlify.com/img/deploy/button.svg" border="0" alt="Deploy to Netlify"></a>
+
+## Branch
+
+Testing V1 branch
