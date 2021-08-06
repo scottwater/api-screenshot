@@ -45,7 +45,3 @@ https://v1.screenshot.11ty.dev/:url/:size/:aspectratio/:zoom/_20210802/
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/11ty/api-screenshot
 "><img src="https://www.netlify.com/img/deploy/button.svg" border="0" alt="Deploy to Netlify"></a>
-
-## Branch
-
-Testing V1 branch
