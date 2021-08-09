@@ -14,3 +14,7 @@ directory = "functions"
 # to = "https://v1--cocky-brown-b1def5.netlify.app/:splat"
 # status = 301
 # force = true
+
+[[redirects]]
+from =  "/*"
+to = "/.netlify/functions/screenshot/:splat"
