@@ -18,3 +18,4 @@ directory = "functions"
 [[redirects]]
 from =  "/*"
 to = "/.netlify/functions/screenshot/:splat"
+status = 200
