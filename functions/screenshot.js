@@ -60,7 +60,7 @@ async function handler(event, context) {
   let format = "jpeg"; // hardcoded for now
   let viewport = [];
 
-  const url = `https://thocstock.com/og/${product_id}`;
+  let url = `https://thocstock.com/og/${product_id}`;
 
   // Manage your own frequency by using a _ prefix and then a hash buster string after your URL
   // e.g. /https%3A%2F%2Fwww.11ty.dev%2F/_20210802/ and set this to today’s date when you deploy
