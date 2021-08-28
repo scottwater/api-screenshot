@@ -56,9 +56,11 @@ async function handler(event, context) {
   // e.g. /https%3A%2F%2Fwww.11ty.dev%2F/small/1:1/smaller/
   const path = event.path.replace("/.netlify/functions/screenshot", "");
   let pathSplit = path.split("/").filter((entry) => !!entry);
-  let [url, size, aspectratio, zoom] = pathSplit;
+  let [product_id, size, aspectratio, zoom] = pathSplit;
   let format = "jpeg"; // hardcoded for now
   let viewport = [];
+
+  const url = `https://thocstock.com/og/${product_id}`;
 
   // Manage your own frequency by using a _ prefix and then a hash buster string after your URL
   // e.g. /https%3A%2F%2Fwww.11ty.dev%2F/_20210802/ and set this to today’s date when you deploy
@@ -75,7 +77,7 @@ async function handler(event, context) {
   // Set Defaults
   format = format || "jpeg";
   aspectratio = aspectratio || "1:1";
-  size = size || "small";
+  size = size || "opengraph";
   zoom = zoom || "standard";
 
   let dpr;
